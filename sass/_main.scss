@@ -1,0 +1,62 @@
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 100px 0;
+}
+
+
+#header-right {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    margin-right: 20%;
+}
+
+#header-left {
+    margin: 0 18%;
+    // flex-grow: 1;
+    // flex-shrink: 1;
+    // flex-basis: 0%;
+}
+
+
+#team {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+img {
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px -4px;
+}
+
+span {
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    position: absolute;
+    padding-left: 30px;
+    font-size: small;
+}
+
+.members {
+    width: 33%;
+    position: relative;
+}
+
+.members p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#saba {
+    top: 70px;
+}
+
+#griff {
+    top: 70px;
+}
