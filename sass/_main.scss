@@ -1,10 +1,15 @@
 .description {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     margin: 100px 0;
 }
 
+@media screen and (max-width: 700px) {
+    .description {
+        display: flex;
+        flex-flow: column;
+    }
+}
 
 #header-right {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Helvetica, sans-serif;
@@ -14,11 +19,21 @@
     margin-right: 20%;
 }
 
+@media screen and (max-width: 700px) {
+    #header-right {
+        margin-left: 10%;
+    }
+}
+
 #header-left {
-    margin: 0 18%;
-    // flex-grow: 1;
-    // flex-shrink: 1;
-    // flex-basis: 0%;
+    margin: 0 20%;
+    font-size: large;
+}
+
+@media screen and (max-width: 700px) {
+    #header-left {
+        margin: 0 10%;
+    }
 }
 
 
@@ -31,7 +46,7 @@
 }
 
 img {
-    width: 60%;
+    width: 75%;
     border-radius: 5px;
     box-shadow: 0px 2px 15px -4px;
 }
@@ -40,17 +55,21 @@ span {
     text-transform: uppercase;
     writing-mode: vertical-lr;
     position: absolute;
-    padding-left: 30px;
-    font-size: small;
+    padding-left: 25px;
+    font-size: 12px;
+    line-height: 16px;
+    right: 14%;
 }
 
 .members {
     width: 33%;
     position: relative;
+    margin-bottom: 5%;        
 }
 
 .members p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
 #saba {
@@ -59,4 +78,31 @@ span {
 
 #griff {
     top: 70px;
+}
+
+@media screen and (max-width: 700px) {
+    #team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-width: 600px;
+        margin-left: 20px;
+    }
+    .members {
+        width: 90%;
+        position: relative;
+        margin-bottom: 5%;        
+    }
+
+    #shae {
+        top: 30px;
+    }
+
+    #skylah {
+        top: 100px;
+    }
+    
+    #stan {
+        top: 120px;
+    }
 }
